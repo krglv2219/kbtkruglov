@@ -1,0 +1,8 @@
+import pandas as pd
+df = pd.read_csv('holera.csv')
+print(df.shape)
+print(df.tail(10))
+print(df.head(5))
+tb=df.loc[:, ['region','country','total_cases']]
+print(tb)
+print(df.loc[:3:12])
